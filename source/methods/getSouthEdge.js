@@ -11,4 +11,4 @@ const getSouthEdge = function(){
     }
 }
 
-export default getSouthEdge
+export default getSouthEdgegit 
