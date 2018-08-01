@@ -1,3 +1,3 @@
-import Matrix from './MatrixClass/Matrix.js'
+import Matrix from './distribution/Matrix.js'
 
 export default Matrix;
