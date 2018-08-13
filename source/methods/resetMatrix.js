@@ -1,5 +1,5 @@
 const resetMatrix = function(){
-    for (let i = 1; i < this.map.size; i++){
+    for (let i = 1; i < this.size; i++){
         this.setValueOfid(i, null)
     }
 }
