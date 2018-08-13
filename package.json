@@ -1,6 +1,6 @@
 {
   "name": "matrix-map",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A class object for to aid in the creation of 2D grid games.",
   "main": "index.js",
   "scripts": {
