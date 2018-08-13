@@ -23,6 +23,7 @@ import setValueOfid from './setValueOfid'
 import convertToSquareBoard from './convertToSquareBoard'
 import getAsItterator from './getAsItterator';
 import hasEquivalentNeighbors from './hasEquivalentNeighbors';
+import resetMatrix from './resetMatrix';
 
 
 
@@ -51,7 +52,8 @@ export {
     getNorthNeighbor,
     convertToSquareBoard,
     getAsItterator,
-    hasEquivalentNeighbors
+    hasEquivalentNeighbors,
+    resetMatrix
 }
 
 

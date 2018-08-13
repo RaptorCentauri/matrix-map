@@ -33,6 +33,7 @@ class Matrix {
     convertToSquareBoard = index.convertToSquareBoard
     getAsItterator = index.getAsItterator
     hasEquivalentNeighbors = index.hasEquivalentNeighbors
+    resetMatrix = index.resetMatrix
 }
 
 export default Matrix
