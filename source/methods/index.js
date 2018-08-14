@@ -24,7 +24,10 @@ import convertToSquareBoard from './convertToSquareBoard'
 import getAsItterator from './getAsItterator';
 import hasEquivalentNeighbors from './hasEquivalentNeighbors';
 import resetMatrix from './resetMatrix';
-
+import getNorthEastNeighbor from './getNorthEastNeighbor';
+import getNorthWestNeighbor from './getNorthWestNeighbor';
+import getSouthWestNeighbor from './getSouthWestNeighbor';
+import getSouthEastNeighbor from './getSouthEastNeighbor';
 
 
 export {
@@ -53,7 +56,11 @@ export {
     convertToSquareBoard,
     getAsItterator,
     hasEquivalentNeighbors,
-    resetMatrix
+    resetMatrix,
+    getNorthEastNeighbor,
+    getNorthWestNeighbor,
+    getSouthWestNeighbor,
+    getSouthEastNeighbor
 }
 
 

@@ -34,6 +34,10 @@ class Matrix {
     getAsItterator = index.getAsItterator
     hasEquivalentNeighbors = index.hasEquivalentNeighbors
     resetMatrix = index.resetMatrix
+    getNorthEastNeighbor = index.getNorthEastNeighbor
+    getNorthWestNeighbor = index.getNorthWestNeighbor
+    getSouthWestNeighbor = index.getSouthWestNeighbor
+    getSouthEastNeighbor = index.getSouthEastNeighbor
 }
 
 export default Matrix
