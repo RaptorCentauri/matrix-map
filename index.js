@@ -1,3 +1,5 @@
-import Matrix from './distribution/Matrix.js'
+// import Matrix from './distribution/Matrix.js'
 
-export default Matrix;
+// export default Matrix;
+
+module.exports = require('./distribution/Matrix.js');
