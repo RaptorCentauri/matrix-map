@@ -10,6 +10,7 @@ const  displayPretty = function(){
 
     let show = arr.convertToSquareBoard();   
     show.forEach(row =>{
+        prettyRow = row.join(', ');
         console.log(row);
     })
 }
