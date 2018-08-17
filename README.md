@@ -601,9 +601,7 @@ Now each square will call someColor for itself. It might look something like thi
 
 ![](./READMEDOCS/gridRandom.png)
 
-3)
-
-The third way. There may be instances where you want to store a function in the id, but you do not wish to call it. To do that, you pass an optional second parameter 'noCall';
+3) There may be instances where you want to store a function in the id, but you do not wish to call it. To do that, you pass an optional second parameter 'noCall';
 
 ~~~javascript
 Matrix.fillEmptyValues(someColor, 'noCall');
