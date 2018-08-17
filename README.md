@@ -1,11 +1,12 @@
-#MATRIX-MAP
+# MATRIX-MAP
+
 *SPECIAL NOTE: Throughout this README you will see various images. These are purely aids to conceputually visualize how the package works. Matrix-Map on its own is not capable of rendering any graphics*
 
-#Repository
+# Repository
 The code for the project can be found here: https://github.com/RaptorCentauri/matrix-map
 
 
-#Description
+# Description
 Matrix-map creates a Class Object of a given size as a perfect square. It helps to visualize it like so:
 
 Each space in the Matrix has its own unique id. Starting at 1 in the top left corner and incremening by 1 left to right until the end.
@@ -21,12 +22,12 @@ Methods and properties will be explained further down. First lets get it install
 
 
 
-#INSTALATION
+# INSTALATION
 ~~~
 npm install matrix-map
 ~~~
 
-#SETUP
+# SETUP
 
 First, import the package.
 
@@ -53,11 +54,11 @@ newMatrix.property
 ~~~
 
 
-#API
+# API
 ---
 ---
 
-##Properties
+## Properties
 
 The Matrix Class contains properties that can be accessed via dot notation:
 
@@ -65,7 +66,7 @@ The Matrix Class contains properties that can be accessed via dot notation:
 Matrix.property
 ~~~
 
-###Matrix.size
+### Matrix.size
 *An integer equal to the size of the Matrix*
 
 ~~~ javascript
@@ -75,7 +76,7 @@ console.log(newMatrix.size)
 ~~~
 ---
 
-###Matrix.keysAsArray 
+### Matrix.keysAsArray 
 *An array of all IDs in the Matrix*
 
 ~~~ javascript
@@ -85,7 +86,7 @@ console.log(newMatix.keysAsArray)
 ~~~
 ---
 
-###Matrix.map  
+### Matrix.map  
 *A Map Object of IDs and Values in the Matrix*
  
 ~~~ javascript
@@ -124,7 +125,7 @@ Map {
 ~~~
 ---
 
-###Matrix.northEdge 
+### Matrix.northEdge 
   
  *A Set Object of IDs on the the north edge of the Matrix*
 
@@ -138,7 +139,7 @@ console.log(newMatrix.northEdge)
 ---
 
 
-###Matrix.southEdge  
+### Matrix.southEdge  
  *A Set Object of IDs on the the south edge of the Matrix*
  
 ~~~ javascript
@@ -151,7 +152,7 @@ console.log(newMatrix.southEdge)
 ---
 
 
-###Matrix.eastEdge  
+### Matrix.eastEdge  
 *A Set Object of IDs on the the east edge of the Matrix*
 
 ~~~ javascript
@@ -164,7 +165,7 @@ console.log(newMatrix.eastEdge)
 ---
 
 
-###Matrix.westEdge  
+### Matrix.westEdge  
 
 *A Set Object of IDs on the the west edge of the Matrix*
 
@@ -178,7 +179,7 @@ console.log(newMatrix.westEdge)
 ---
 
 
-##Methods
+## Methods
 
 
 The matrix class contains methods, they are accessed via dot notation and followed by an open and closed parentheticals
@@ -188,7 +189,7 @@ Matrix.method()
 ~~~
 
 
-###Matrix.getNorthNeighbor(*id*)
+### Matrix.getNorthNeighbor(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return the ID that is of north of the ID passed as an argument to the method.*
@@ -201,7 +202,7 @@ Matrix.getNorthNeighbor(13)
 ~~~
 ---
 
-###Matrix.getSouthNeighbor(*id*)
+### Matrix.getSouthNeighbor(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return the ID that is of south of the ID passed as an argument to the method.*
@@ -215,7 +216,7 @@ Matrix.getSouthNeighbor(13)
 ---
 
 
-###Matrix.getEastNeighbor(*id*)
+### Matrix.getEastNeighbor(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return the ID that is of east of the ID passed as an argument to the method.*
@@ -229,7 +230,7 @@ Matrix.getEastNeighbor(13)
 ---
 
 
-###Matrix.getWestNeighbor(*id*)
+### Matrix.getWestNeighbor(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return the ID that is of west of the ID passed as an argument to the method.*
@@ -243,7 +244,7 @@ Matrix.getWestNeighbor(13)
 ---
 
 
-###Matrix.getNorthEastNeighbor(*id*)
+### Matrix.getNorthEastNeighbor(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return the ID that is of north-east of the ID passed as an argument to the method.*
@@ -257,7 +258,7 @@ Matrix.getNorthEastNeighbor(13)
 ---
 
 
-###Matrix.getNorthWestNeighbor(*id*)
+### Matrix.getNorthWestNeighbor(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return the ID that is of north-west of the ID passed as an argument to the method.*
@@ -272,7 +273,7 @@ Matrix.getNorthWestNeighbor(13)
 ---
 
 
-###Matrix.getSouthEastNeighbor(*id*)
+### Matrix.getSouthEastNeighbor(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return the ID that is of south-east of the ID passed as an argument to the method.*
@@ -287,7 +288,7 @@ Matrix.getSouthEastNeighbor(13)
 ---
 
 
-###Matrix.getSouthWestNeighbor(*id*)
+### Matrix.getSouthWestNeighbor(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return the ID that is of south-west of the ID passed as an argument to the method.*
@@ -301,7 +302,7 @@ Matrix.getSouthWestNeighbor(13)
 ---
 
 
-###Matrix.getNeighbors(*id*)
+### Matrix.getNeighbors(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return a  Set Object containing the IDs to the north, south, east and west of the ID passed as an argument to the method.*
@@ -322,7 +323,7 @@ Matrix.getNeighbors(10)
 ---
 
 
-###Matrix.getEquivalentNeighbors(*id*)
+### Matrix.getEquivalentNeighbors(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return a  Map Object containing the IDs and Values to the north, south, east and west of the ID passed as an argument to the method, provided that those Values are equal to the Value of the passed ID*
@@ -336,7 +337,7 @@ Matrix.getEquivalentNeighbors(13)
 ~~~
 ---
 
-###Matrix.hasEquivalentNeighbors(*id*)
+### Matrix.hasEquivalentNeighbors(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return a boolean. True if the value of any ID to the north, south, east or west have a value equal to the passed ID. False if none have an equal value to the passed id*
@@ -356,7 +357,7 @@ Matrix.hasEquivalentNeighbors(9)
 ---
 
 
-###Matrix.setValueOfID(*id*, *value*, *noCall*)
+### Matrix.setValueOfID(*id*, *value*, *noCall*)
 *id* : *An integer representing an ID in the Matrix*. 
 
 *value*: *The Value to be asscociated with the ID of the Matrix, can be of any type*. 
@@ -376,7 +377,7 @@ Matrix.setValueOfID(7)
 ---
 
 
-###Matrix.getValueOfID(_id_)
+### Matrix.getValueOfID(_id_)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return the value associated with the passed ID in the Matrix*
@@ -389,7 +390,7 @@ Matrix.getValueOfID(7)
 ~~~
 ---
 
-###Matrix.deleteValueOfID(_id_)
+### Matrix.deleteValueOfID(_id_)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will set the value of the ID in the Matrix to null*
@@ -406,7 +407,7 @@ newMatrix.deleteValueOdId(14)
 ---
 
 
-###Matrix.getChainFromID(*id*)
+### Matrix.getChainFromID(*id*)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will return a Set Object containing the IDs of whose value is equal to the value of the passed ID, and connected by an uninterupted path. The passed ID will also be included in the set.*
@@ -420,7 +421,7 @@ newMatrix.getChainFromID(7)
 ~~~
 ---
  
-###Matrix.destroyChainFromID(_id_)
+### Matrix.destroyChainFromID(_id_)
 *id* : *An integer representing an ID in the Matrix*
 
 *Will set to null all IDs whose value is equal to the value of the passed ID, and connected by an uninterupted path. The passed ID will also be set to null*
@@ -435,7 +436,7 @@ newMatrix.destroyChainFromID(7)
 
 ---
 
-###Matrix.replaceChainFromID(*id*, *value*, *noCall*)
+### Matrix.replaceChainFromID(*id*, *value*, *noCall*)
 *id* : *An integer representing an ID in the Matrix*. 
 
 *value*: *The Value to be asscociated with the ID of the Matrix, can be of any type*. 
@@ -455,7 +456,7 @@ newMatrix.replaceChainFromID(9, 'Green')
 ---
 
 
-###Matrix.display()
+### Matrix.display()
 *Will display the matrix in the console*
 
 Assuming all values are 'Z'. 
@@ -484,7 +485,7 @@ Null values will be displayed like this:
 
 --- 
 
-###Matrix.displayPretty()
+### Matrix.displayPretty()
 *Will display the pretty-fied matrix in the console*
 
 Assuming all values are 'Z' 
@@ -513,7 +514,7 @@ Null values are represented by an asterisk.
 
 --- 
 
-###Matrix.dropDown() 
+### Matrix.dropDown() 
 *Will drop the matrix to the south edge, filling any null values with the value to the north*
 
 
@@ -528,7 +529,7 @@ newMatrix.dropDown()
 
 ---
 
-###Matrix.fillEmptyValues(*value*, *noCall*)
+### Matrix.fillEmptyValues(*value*, *noCall*)
 *value*: *The Value to be asscociated with the ID of the Matrix, can be of any type*. 
 
 *noCall*: *A String: 'noCall'. An optional parameter that can be set when you wish to pass a function as a value, but do not wish to call the funtion.*
@@ -546,7 +547,7 @@ Matrix.fillEmptyValue('Orange');
 --- 
 
 
-###Matrix.resetMatrix()
+### Matrix.resetMatrix()
 *Will set all IDs to a value of null*
 
 ![](./READMEDOCS/gridRandom.png)
@@ -561,7 +562,7 @@ Matrix.resetMatrix()
 
 
 ---
-##Passing Functions as Values
+## Passing Functions as Values
 *The following applies to any method that can take a value argument*
 
 For this example, imagine that we have a function called someColor(). It will return a random color of red, green, blue, or yellow.
