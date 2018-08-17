@@ -4,14 +4,14 @@ const dropDown = function(){
         let dropMap = new Map();
 
         do {
-        dropMap.set(e, this.getValueOfId(e))
+        dropMap.set(e, this.getValueOfID(e))
         e = e-rowSize;
         } while (e-rowSize > -(rowSize));
 
         let setOfNulls = new Set();
 
         for (const [key, value] of dropMap) {
-            if(this.getValueOfId(key) === null){
+            if(this.getValueOfID(key) === null){
                 setOfNulls.add(key)
             }
         }
@@ -20,7 +20,7 @@ const dropDown = function(){
             let setOfValid = new Set();
 
             for (const [key, value] of dropMap) {
-                if(this.getValueOfId(key) != null){
+                if(this.getValueOfID(key) != null){
                     setOfValid.add(key)
                 }
             }

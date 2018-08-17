@@ -1,4 +1,4 @@
-const setValueOfid = function(id, val, noCall){
+const setValueOfID = function(id, val, noCall){
     try {
         if(id > this.map.size) throw new RangeError(`You passed an ID (${id}) larger than the Matrix size (${this.map.size})!`);
         if(id <= 0) throw new RangeError(`ID must be greater than zero!`);
@@ -24,4 +24,4 @@ const setValueOfid = function(id, val, noCall){
 
 }
 
-export default setValueOfid
+export default setValueOfID

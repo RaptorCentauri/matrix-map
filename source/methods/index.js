@@ -9,17 +9,17 @@ import getEastNeighbor from './getEastNeighbor'
 import getWestNeighbor from './getWestNeighbor'
 import getNeighbors from './getNeighbors'
 import getEquivalentNeighbors from './getEquivalentNeighbors'
-import destroyChainfromID from './destroyChainfromID'
-import getChainfromID from './getChainfromID'
-import replaceChainfromID from './replaceChainfromID'
+import destroyChainFromID from './destroyChainFromID'
+import getChainFromID from './getChainFromID'
+import replaceChainFromID from './replaceChainFromID'
 import display from './display'
 import displayPretty from './displayPretty'
 import dropDown from './dropDown'
 import createMap from './createMap'
-import deleteValueOfId from './deleteValueOfId'
+import deleteValueOfID from './deleteValueOfID'
 import fillEmptyValues from './fillEmptyValues'
-import getValueOfId from './getValueOfId'
-import setValueOfid from './setValueOfid'
+import getValueOfID from './getValueOfID'
+import setValueOfID from './setValueOfID'
 import convertToSquareBoard from './convertToSquareBoard'
 import getAsItterator from './getAsItterator';
 import hasEquivalentNeighbors from './hasEquivalentNeighbors';
@@ -32,14 +32,14 @@ import getSouthEastNeighbor from './getSouthEastNeighbor';
 
 export {
     createMap, 
-    deleteValueOfId, 
-    destroyChainfromID, 
+    deleteValueOfID, 
+    destroyChainFromID, 
     display, 
     displayPretty, 
     dropDown, 
     fillEmptyValues, 
     getAllEdges, 
-    getChainfromID, 
+    getChainFromID, 
     getEastEdge, 
     getEastNeighbor, 
     getEquivalentNeighbors, 
@@ -47,11 +47,11 @@ export {
     getNorthEdge, 
     getSouthEdge, 
     getSouthNeighbor,
-    getValueOfId, 
+    getValueOfID, 
     getWestEdge, 
     getWestNeighbor, 
-    replaceChainfromID, 
-    setValueOfid,
+    replaceChainFromID, 
+    setValueOfID,
     getNorthNeighbor,
     convertToSquareBoard,
     getAsItterator,

@@ -1,5 +1,5 @@
-  const deleteValueOfId = function(id){
+  const deleteValueOfID = function(id){
         this.map.set(id, null)
     }
 
-    export default deleteValueOfId
+    export default deleteValueOfID

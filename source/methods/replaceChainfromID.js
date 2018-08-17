@@ -1,10 +1,10 @@
-const replaceChainfromID = function(id, val, noCall){
+const replaceChainFromID = function(id, val, noCall){
 
-    let chain = this.getChainfromID(id)
+    let chain = this.getChainFromID(id)
     chain.forEach(c => {
-        this.setValueOfid(c, val, noCall)
+        this.setValueOfID(c, val, noCall)
     })
 
 }
 
-export default replaceChainfromID
+export default replaceChainFromID

@@ -8,10 +8,10 @@ class Matrix {
         this.getAsItterator()
     }
 
-    setValueOfid = index.setValueOfid
-    getValueOfId = index.getValueOfId
+    setValueOfID = index.setValueOfID
+    getValueOfID = index.getValueOfID
     fillEmptyValues = index.fillEmptyValues
-    deleteValueOfId = index.deleteValueOfId
+    deleteValueOfID = index.deleteValueOfID
     getNorthEdge = index.getNorthEdge
     getEastEdge = index.getEastEdge
     getSouthEdge = index.getSouthEdge
@@ -23,9 +23,9 @@ class Matrix {
     getWestNeighbor = index.getWestNeighbor;
     getNeighbors = index.getNeighbors;
     getEquivalentNeighbors = index.getEquivalentNeighbors;
-    destroyChainfromID = index.destroyChainfromID;
-    getChainfromID = index.getChainfromID;
-    replaceChainfromID = index.replaceChainfromID;
+    destroyChainFromID = index.destroyChainFromID;
+    getChainFromID = index.getChainFromID;
+    replaceChainFromID = index.replaceChainFromID;
     display = index.display;
     displayPretty = index.displayPretty
     dropDown = index.dropDown

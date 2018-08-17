@@ -1,4 +1,4 @@
-const getChainfromID = function(id){
+const getChainFromID = function(id){
     let toBeDestroyed = new Set();
 
     let alreadyChecked = new Set()
@@ -36,4 +36,4 @@ const getChainfromID = function(id){
 
 }
 
-export default getChainfromID
+export default getChainFromID
