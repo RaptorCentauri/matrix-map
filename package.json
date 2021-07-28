@@ -2,11 +2,9 @@
   "name": "matrix-map",
   "version": "1.0.13",
   "description": "A class object for to aid in the creation of 2D grid games.",
-  "main": "index.js",
+  "main": "source/Matrix.js",
   "scripts": {
-    "test": "npm test",
-    "build": "babel source --out-dir distribution",
-    "prepublish": "npm run build"
+    "test": "npm test"
   },
   "repository": {
     "type": "git",
@@ -24,11 +22,5 @@
   "bugs": {
     "url": "https://github.com/RaptorCentauri/matrix-map/issues"
   },
-  "homepage": "https://github.com/RaptorCentauri/matrix-map#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1"
-  }
+  "homepage": "https://github.com/RaptorCentauri/matrix-map#readme"
 }
