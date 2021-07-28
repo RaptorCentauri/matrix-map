@@ -23,7 +23,7 @@ Methods and properties will be explained further down. First lets get it install
 
 
 # INSTALATION
-~~~
+~~~ bash
 npm install matrix-map
 ~~~
 
